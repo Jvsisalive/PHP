@@ -3,14 +3,12 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "school_db";
+$dbname = "wjv";
 // 2. Create the connection
-$conn = mysqli_connect($servername, $usern
-ame, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 // 3. Check connection
 if (!$conn) {
-die("Connection failed: " . mysqli_con
-nect_error());
+die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully!";
 ?>

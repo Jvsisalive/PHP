@@ -1,11 +1,11 @@
 <?php
 include 'db_connect.php';
 
-$first_name = $_POST['first_name'];
-$last_name  = $_POST['last_name'];
+$Accessname = $_POST['Accessname'];
+$password  = $_POST['password'];
 
-$sql = "INSERT INTO students (first_name, last_name)
-        VALUES ('$first_name', '$last_name')";
+$sql = "INSERT INTO ella (Accessname, password)
+        VALUES ('$Accessname', '$password')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
